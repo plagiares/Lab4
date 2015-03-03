@@ -1,14 +1,3 @@
-//template<typename TYPE>
-//const TYPE TrouverMax(const TYPE _tableau, const TYPE  _capacite)
-//{
-//	TYPE valeurMaximum;
-//	for (int i = 0; i < _capacite; i++)
-//	{
-//		if (valeurMaximum < _tableau[i])
-//			valeurMaximum = _tableau[i];
-//	}
-//	return valeurMaximum;
-//}
 
 template<typename TYPE>
 TYPE TrouverMax(const TYPE _table[], const int _taille)

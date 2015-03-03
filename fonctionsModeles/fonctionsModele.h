@@ -1,7 +1,7 @@
 #pragma once
 
 template<typename TYPE>
-TYPE TrouverMax(const TYPE _table[] , int _taille);
+TYPE TrouverMax(const TYPE _table[] ,const  int _taille);
 
 ////Trouver la valeur maximum dans un tableau
 //template<typename TYPE>
