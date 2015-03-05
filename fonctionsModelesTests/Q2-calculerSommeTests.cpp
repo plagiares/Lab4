@@ -12,13 +12,13 @@ namespace fonctionsModelesTests
 
 		//Question 2
 				
-		//TEST_METHOD(CalculerSomme_DansUnTableauDeFloat_DevraitRetournerLaSomme)
-		//{
-		//	float tabFloat[5]   = { 22.2f, 11.1f, 33.1f, -55.5f, -99.9f };
-		//	float sommeAttendue = tabFloat[0] + tabFloat[1] + tabFloat[2] + tabFloat[3] + tabFloat[4];
+		TEST_METHOD(CalculerSomme_DansUnTableauDeFloat_DevraitRetournerLaSomme)
+		{
+			float tabFloat[5]   = { 22.2f, 11.1f, 33.1f, -55.5f, -99.9f };
+			float sommeAttendue = tabFloat[0] + tabFloat[1] + tabFloat[2] + tabFloat[3] + tabFloat[4];
 
-		//	Assert::AreEqual(sommeAttendue, CalculerSomme(tabFloat, 5));
-		//}
+			Assert::AreEqual(sommeAttendue, CalculerSomme(tabFloat, 5));
+		}
 
 		//TEST_METHOD(CalculerSomme_DansUnTableauDeInt_DevraitRetournerLaSomme)
 		//{
