@@ -26,12 +26,12 @@ namespace fonctionsModelesTests
 			Assert::AreEqual(unsigned int(3), CompterElement(21, tabInt, 5));
 		}
 
-		//TEST_METHOD(CompterElement_DansUnTableauDeString_DevraitRetournerLeNombreDelementsDansLeTableau)
-		//{
-		//	string tabString[5] = { "Huit", "Cinq", "Deux", "Trois", "Deux" };
+		TEST_METHOD(CompterElement_DansUnTableauDeString_DevraitRetournerLeNombreDelementsDansLeTableau)
+		{
+			string tabString[5] = { "Huit", "Cinq", "Deux", "Trois", "Deux" };
 
-		//	Assert::AreEqual(unsigned int(2), CompterElement(string("Deux"), tabString, 5));
-		//}
+			Assert::AreEqual(unsigned int(2), CompterElement(string("Deux"), tabString, 5));
+		}
 
 	};
 }
