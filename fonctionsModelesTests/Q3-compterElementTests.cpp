@@ -19,12 +19,12 @@ namespace fonctionsModelesTests
 			Assert::AreEqual(unsigned int(3), CompterElement(11.1f, tabFloat, 5));
 		}
 
-		//TEST_METHOD(CompterElement_DansUnTableauDeInt_DevraitRetournerLeNombreDelementsDansLeTableau)
-		//{
-		//	int tabInt[5] = { 21, 2, 21, 21, -1 };
+		TEST_METHOD(CompterElement_DansUnTableauDeInt_DevraitRetournerLeNombreDelementsDansLeTableau)
+		{
+			int tabInt[5] = { 21, 2, 21, 21, -1 };
 
-		//	Assert::AreEqual(unsigned int(3), CompterElement(21, tabInt, 5));
-		//}
+			Assert::AreEqual(unsigned int(3), CompterElement(21, tabInt, 5));
+		}
 
 		//TEST_METHOD(CompterElement_DansUnTableauDeString_DevraitRetournerLeNombreDelementsDansLeTableau)
 		//{
