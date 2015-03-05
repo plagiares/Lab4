@@ -25,3 +25,15 @@ TYPE CalculerSomme(const TYPE _table[], const int _taille)
 	}
 	return sommateur;
 }
+
+template<typename TYPE>
+unsigned int CompterElement(const TYPE _element, const TYPE _table[], const int _taille)
+{
+	unsigned int compteur = 0;
+	for (int i = 0; i < _taille; i++)
+	{
+		if (_table[i] == _element)
+		compteur++;
+	}
+	return compteur;
+}
