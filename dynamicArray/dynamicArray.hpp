@@ -48,4 +48,9 @@ void DynamicArray<TYPE>::setCapacite(const int nouvelle_capacite)
 		for (int i = capacite; i < nouvelle_capacite; i++)
 			tableElements.push_back(TYPE());
 	}
+	else
+	{
+		capacite = nouvelle_capacite;
+	}
+	
 }
