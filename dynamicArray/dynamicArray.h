@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -10,10 +11,12 @@ class DynamicArray
 public:
 DynamicArray();
 int getCapacite();
+TYPE getElement(int i);
 
 private:
-
+vector<TYPE> tableElements;
 int capacite = 100;
+
 
 };
 
