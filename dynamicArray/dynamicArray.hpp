@@ -19,7 +19,13 @@ int DynamicArray<TYPE>::getCapacite()
 }
 
 template <class TYPE>
-TYPE DynamicArray<TYPE>::getElement(int i)
+void DynamicArray<TYPE>::setElement(const int index_element, const TYPE nouvelle_valeur_element)
+{
+	tableElements.insert(tableElements.begin() + index_element, nouvelle_valeur_element);
+}
+
+template <class TYPE>
+TYPE DynamicArray<TYPE>::getElement(const int i)
 {
 	return tableElements[i];
 }
