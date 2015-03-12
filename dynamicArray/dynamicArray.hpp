@@ -41,6 +41,7 @@ void DynamicArray<TYPE>::setElement(const int index_element, const TYPE nouvelle
 template <class TYPE>
 TYPE DynamicArray<TYPE>::getElement(const int i)
 {
+	if (i > capacite) throw out_of_range("hors de portee");
 	return tableElements[i];
 }
 
