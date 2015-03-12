@@ -31,6 +31,9 @@ int DynamicArray<TYPE>::getCapacite()
 template <class TYPE>
 void DynamicArray<TYPE>::setElement(const int index_element, const TYPE nouvelle_valeur_element)
 {
+	if (index_element > capacite)
+		aggrandirCapacite(index_element);
+		
 	tableElements.insert(tableElements.begin() + index_element, nouvelle_valeur_element);
 }
 
@@ -47,6 +50,7 @@ void DynamicArray<TYPE>::setCapacite(const int nouvelle_capacite)
 	{
 		for (int i = capacite; i < nouvelle_capacite; i++)
 			tableElements.push_back(TYPE());
+		capacite = nouvelle_capacite;
 	}
 	else
 	{
@@ -54,3 +58,14 @@ void DynamicArray<TYPE>::setCapacite(const int nouvelle_capacite)
 	}
 	
 }
+
+template <class TYPE>
+
+void DynamicArray<TYPE>::aggrandirCapacite(const int nouvelle_capacite)
+{
+	for (int i = capacite; i < nouvelle_capacite; i++)
+	tableElements.push_back(TYPE());
+
+	capacite = nouvelle_capacite;
+}
+
