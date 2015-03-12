@@ -48,6 +48,7 @@ TYPE DynamicArray<TYPE>::getElement(const int i)
 template <class TYPE>
 void DynamicArray<TYPE>::setCapacite(const int nouvelle_capacite)
 {
+	if (nouvelle_capacite < 1)throw invalid_argument("capacite impossible");
 	if (nouvelle_capacite > capacite)
 	{
 		for (int i = capacite; i < nouvelle_capacite; i++)
