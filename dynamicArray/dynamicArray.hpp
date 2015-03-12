@@ -15,6 +15,7 @@ DynamicArray<TYPE>::DynamicArray()
 template <class TYPE>
 DynamicArray<TYPE>::DynamicArray(const int _capacite)
 {
+	if (_capacite == 0) throw invalid_argument("la capacite ne peut pas etre 0");
 	capacite = _capacite;
 	for (int i = 0; i < capacite; i++)
 	{
